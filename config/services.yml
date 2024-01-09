@@ -1,6 +1,7 @@
 services:
     Faker\Generator:
       factory: ['PrestaShop\Module\PsFixturesCreator\Faker\FakerFactory', 'create']
+      lazy: true
       arguments:
         - 'en_EN'
 
